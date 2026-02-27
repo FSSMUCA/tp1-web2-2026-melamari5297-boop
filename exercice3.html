@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 3 - Constantes</title>
+</head>
+<body>
+
+    <h1>Exercice 3 - Mini calculatrice TVA</h1>
+
+    <script>
+        // Déclaration de la constante (SCREAMING_SNAKE_CASE)
+        const TAUX_TVA = 0.20;
+
+        // Variable modifiable
+        let prixHT = 150;
+
+        // Calcul de la TVA
+        let montantTVA = TAUX_TVA * prixHT;
+
+        // Calcul du prix TTC
+        let prixTTC = prixHT + montantTVA;
+
+        // Affichage avec template literals (backticks ` `)
+        console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${montantTVA} € | Prix TTC : ${prixTTC} €`);
+
+        // Tentative de modification de la constante
+        // TAUX_TVA = 0.25;  // ❌ Décommente cette ligne pour voir l’erreur
+    </script>
+
+</body>
+</html>

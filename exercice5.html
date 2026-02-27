@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche</title>
+</head>
+<body>
+
+    <h1>Ma fiche de présentation</h1>
+
+    <p id="nomComplet">...</p>
+    <p id="age">...</p>
+    <p id="ville">...</p>
+    <p id="presentation">...</p>
+
+    <script>
+        // Déclaration des variables
+        let prenom = "Mohamed";
+        let nom = "Amari";
+        let age = 20;
+        let ville = "Marrakech";
+
+        // Modifier le contenu HTML
+        document.getElementById("nomComplet").innerHTML = prenom + " " + nom.toUpperCase();
+        document.getElementById("age").innerHTML = "Âge : " + age + " ans";
+        document.getElementById("ville").innerHTML = "Ville : " + ville;
+
+        // Phrase complète
+        document.getElementById("presentation").innerHTML =
+            `Je m'appelle ${prenom} ${nom}, j'ai ${age} ans et j'habite à ${ville}.`;
+
+        // Changer dynamiquement le titre de la page
+        document.title = "Fiche de " + prenom;
+
+        // Alternative avec querySelector
+        // document.querySelector("#nomComplet").innerHTML = prenom + " " + nom;
+    </script>
+
+</body>
+</html>
